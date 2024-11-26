@@ -80,7 +80,7 @@ export default function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Simple and Transparent Pricing
+          <span>Simple and Transparent Pricing</span>
         </motion.h2>
         
         <motion.p
@@ -90,7 +90,7 @@ export default function PricingSection() {
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
         >
-          Plans tailored to your business needs.
+          <span>Plans tailored to your business needs.</span>
         </motion.p>
 
         <motion.div
@@ -111,17 +111,17 @@ export default function PricingSection() {
                 transition: { type: "spring", stiffness: 300 }
               }}
             >
-              <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
+              <h3 className="text-2xl font-bold mb-2"><span>{plan.name}</span></h3>
               <div className="mb-4">
                 <span className="text-4xl font-bold">{plan.price}</span>
                 {plan.price !== "Custom" && <span className="text-gray-600">/month</span>}
               </div>
-              <p className="text-gray-600 mb-6">{plan.description}</p>
+              <p className="text-gray-600 mb-6"><span>{plan.description}</span></p>
               <ul className="space-y-4 mb-8 flex-grow">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-2">
                     <span className="text-green-500">✓</span>
-                    {feature}
+                    <span>{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -130,7 +130,7 @@ export default function PricingSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Choose Plan
+                <span>Choose Plan</span>
               </motion.button>
             </motion.div>
           ))}

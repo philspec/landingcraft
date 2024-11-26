@@ -64,14 +64,14 @@ export default function InteractiveBuilderSection(): JSX.Element {
           className="text-4xl md:text-5xl font-bold text-center mb-6"
           variants={itemVariants}
         >
-          Experience the Power of LandingCraft in Action
+          <span>Experience the Power of LandingCraft in Action</span>
         </motion.h2>
         
         <motion.p 
           className="text-xl text-center mb-16 max-w-3xl mx-auto"
           variants={itemVariants}
         >
-          Try our interactive builder demo. Create, drag, and drop elements to see the magic unfold.
+          <span>Try our interactive builder demo. Create, drag, and drop elements to see the magic unfold.</span>
         </motion.p>
 
         <motion.div
@@ -85,7 +85,7 @@ export default function InteractiveBuilderSection(): JSX.Element {
             animate={gradientAnimation}
           />
           <div className="relative z-10 w-full h-full flex items-center justify-center">
-            <p className="text-lg text-gray-500">Interactive Builder Demo</p>
+            <p className="text-lg text-gray-500"><span>Interactive Builder Demo</span></p>
           </div>
         </motion.div>
       </motion.div>

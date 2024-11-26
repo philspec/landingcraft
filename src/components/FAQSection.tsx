@@ -116,7 +116,7 @@ export default function FAQSection() {
                   transition={{ type: "spring", bounce: 0.3 }}
                   className="text-xl opacity-60"
                 >
-                  ↓
+                  <span>↓</span>
                 </motion.span>
               </motion.button>
 

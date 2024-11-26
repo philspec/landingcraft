@@ -44,7 +44,7 @@ export default function CTASection(): JSX.Element {
             viewport={{ once: true }}
             transition={{ type: "spring", bounce: 0.4 }}
           >
-            Ready to Craft Your Perfect Landing Page?
+            <span>Ready to Craft Your Perfect Landing Page?</span>
           </motion.h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -82,7 +82,7 @@ export default function CTASection(): JSX.Element {
               whileTap="tap"
               viewport={{ once: true }}
             >
-              Talk to an Expert
+              <span>Talk to an Expert</span>
             </motion.button>
           </div>
         </motion.div>

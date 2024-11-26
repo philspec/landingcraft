@@ -67,13 +67,13 @@ export default function TestimonialsSection() {
           className="text-4xl md:text-5xl font-bold text-center mb-6"
           variants={cardVariants}
         >
-          What Our Clients Say
+          <span>What Our Clients Say</span>
         </motion.h2>
         <motion.p
           className="text-xl text-center mb-16 max-w-3xl mx-auto"
           variants={cardVariants}
         >
-          Trusted by businesses worldwide to craft their perfect landing pages.
+          <span>Trusted by businesses worldwide to craft their perfect landing pages.</span>
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
@@ -104,11 +104,11 @@ export default function TestimonialsSection() {
                   }}
                 />
                 <div>
-                  <h3 className="font-semibold">{testimonial.author}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{testimonial.role}</p>
+                  <h3 className="font-semibold"><span>{testimonial.author}</span></h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400"><span>{testimonial.role}</span></p>
                 </div>
               </div>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4"><span>&ldquo;{testimonial.quote}&rdquo;</span></p>
               <div className="flex gap-1">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <motion.span 
@@ -118,7 +118,7 @@ export default function TestimonialsSection() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.1 }}
                   >
-                    ★
+                    <span>★</span>
                   </motion.span>
                 ))}
               </div>

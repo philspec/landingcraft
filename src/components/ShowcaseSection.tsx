@@ -44,69 +44,44 @@ export default function ShowcaseSection() {
           className="text-4xl md:text-5xl font-bold text-center mb-6"
           variants={itemVariants}
         >
-          Transform Ideas into Impactful Designs
+          <span>Transform Ideas into Impactful Designs</span>
         </motion.h2>
         <motion.p 
           className="text-xl text-center mb-16 max-w-3xl mx-auto"
           variants={itemVariants}
         >
-          Our designs aren't just visually striking; they're strategically engineered to guide users towards action.
+          <span>Our designs aren&apos;t just visually striking; they&apos;re strategically engineered to guide users towards action.</span>
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {['SaaS', 'E-commerce', 'Portfolios', 'Events'].map((category, index) => (
+          {['SaaS', 'E-commerce', 'Portfolios', 'Events'].map((category) => (
             <motion.div
               key={category}
-
               className="aspect-video bg-black/[.05] dark:bg-white/[.05] rounded-lg p-6 flex items-center justify-center relative overflow-hidden"
-
               variants={itemVariants}
-
               whileHover={{ 
-
                 scale: 1.05,
-
                 transition: { type: "spring", stiffness: 300 }
-
               }}
-
             >
-
               <motion.div
-
                 className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10"
-
                 animate={{
-
                   scale: [1, 1.2, 1],
-
                   rotate: [0, 3, -3, 0]
-
                 }}
-
                 transition={{
-
                   duration: 5,
-
                   repeat: Infinity,
-
                   repeatType: "reverse"
-
                 }}
-
               />
-
-              <h3 className="text-xl font-semibold relative z-10">{category}</h3>
-
+              <h3 className="text-xl font-semibold relative z-10">
+                <span>{category}</span>
+              </h3>
             </motion.div>
-
           ))}
-
         </div>
-
       </motion.div>
-
     </section>
-
   );
-
 } 

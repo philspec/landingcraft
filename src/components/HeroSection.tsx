@@ -39,9 +39,14 @@ const contentVariants: Variants = {
  * Button hover animation variants
  */
 const buttonVariants: Variants = {
-  hover: { scale: 1.05 },
-  tap: { scale: 0.95 },
-  transition: { type: "spring", stiffness: 400 }
+  hover: { 
+    scale: 1.05,
+    transition: { type: "spring", stiffness: 400 }
+  },
+  tap: { 
+    scale: 0.95,
+    transition: { type: "spring", stiffness: 400 }
+  }
 };
 
 /**

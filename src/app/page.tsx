@@ -14,7 +14,6 @@ import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
-import type { JSX } from 'react'
 
 export default function Home(): React.ReactElement {
   return (

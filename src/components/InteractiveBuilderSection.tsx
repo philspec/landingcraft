@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { AnimationVariants } from "@/types";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
